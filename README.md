@@ -1,6 +1,7 @@
 # Task CLI Application
 
 A CLI app to track your tasks and manage your to-do list.
+Sample solution for the [task-tracker](https://roadmap.sh/projects/task-tracker) challenge from [roadmap.sh](https://roadmap.sh/).
 
 ## Installation
 
