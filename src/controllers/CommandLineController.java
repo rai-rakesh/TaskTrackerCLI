@@ -76,6 +76,8 @@ public class CommandLineController {
                         System.out.print("Invalid command");
                         System.out.print(taskManager.listCommands());
                     }
+                case "exit":
+                    return;
                 default:
                     System.out.print(taskManager.listCommands());
 

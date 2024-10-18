@@ -6,42 +6,42 @@ A CLI app to track your tasks and manage your to-do list.
 
 1. Complile Java code
 ```bash
-javac Main.java Status.java CommandLineController.java Task.java TaskManager.java
+javac -d bin -sourcepath src src\model\Status.java src\model\Task.java src\model\TaskManager.java src\controllers\CommandLineController.java src\Main.java
 ```
 2. Run the application
 ```bash
-java Main.java <command> [arguments]
+java -cp bin Main
 ```
 
 ## Usage
 
 ```python
 # Adding a new task
-java TaskCLIApp add "Buy groceries"
-# Output: Task added successfully (ID: 1)
+add Learn LearnSpringSecurity
+# Output: Task 6 with id LearnSpringSecurity added successfully
 
 # Updating a task
-java TaskCLIApp update 1 "Buy groceries and cook dinner"
-# Output: Task updated successfully (ID: 1)
+update 6 Learn Tailwind
+# Output: Task with id : 6 successfully updated
 
 # Deleting a task
-java TaskCLIApp delete 1
-# Output: Task deleted successfully (ID: 1)
+delete 6
+# Output: Task with id : 6 succesfully deleted
 
 # Marking a task as in progress
-java TaskCLIApp mark-in-progress 1
-# Output: Task marked as in progress (ID: 1)
+mark-in-progress 5
+# Output: Task with id : 5 marked IN_PROGRESS
 
 # Marking a task as done
-java TaskCLIApp mark-done 1
-# Output: Task marked as done (ID: 1)
+mark-done 4
+# Output: TTask with id : 4 marked DONE
 
 # Listing all tasks
-java TaskCLIApp list
+list
 # Output: List of all tasks
 
 # Listing tasks by status
-java TaskCLIApp list todo
-java TaskCLIApp list in-progress
-java TaskCLIApp list done
+list todo
+list in-progress
+list done
 ```

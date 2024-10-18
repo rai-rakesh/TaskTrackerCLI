@@ -166,6 +166,7 @@ public class TaskManager {
                 .append("   MARKING INPROGRESS -> mark-in-progress <<Task id>> \n")
                 .append("   MARKING DONE -> mark-done <<Task id>> \n")
                 .append("   LIST TASK-> list \n")
+                .append("   EXIT -> exit \n")
                 .append("} \n");
         return sb.toString();
     }
